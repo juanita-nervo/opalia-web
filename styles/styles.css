@@ -1,0 +1,232 @@
+/* generales */
+* { margin: 0; padding: 0; }
+
+body{
+    font-family: Quicksand, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header{
+    background-color: #fff6cc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nombre de la marca */
+.navbar-brand{
+    font-size: 32px;
+    font-weight: bold;
+    color: #b35e3c;
+}
+
+a.navbar-brand:hover{
+    color: #834026;
+}
+
+/* Enlaces */
+nav a{
+    text-decoration: none;
+    color: #572c10;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 20px;
+}   
+
+nav a:hover{
+    color: #b35e3c; 
+}
+
+    
+
+
+/* MAIN */
+main{
+    margin-left: 25px;
+}
+
+h1{
+    padding: 30px;
+    font-size: 48px;
+    color: #b35e3c;
+    text-align: center;
+}
+
+p{
+    padding: 10px;
+    font-size: 18px;
+    color: #2c2b2a;
+}
+
+img{
+    padding: 20px;
+    width: 300px;
+    height: auto;
+}
+
+h2{
+    padding: 15px;
+    font-size: 32px;
+    color: #b35e3c;
+}
+
+h3{
+    padding: 10px;
+    font-size: 24px;
+    color: #b35e3c;
+}
+
+/*INICIO*/
+.inicio{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "portada"
+        "detalle"
+        "imagen-portada";
+} 
+
+@media(min-width: 768px){
+    .inicio{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "portada portada portada"
+            "detalle detalle imagen-portada";
+        margin: 0px;
+        gap: 20px;
+    }
+}
+
+
+.portada{
+    background-image: linear-gradient(#fff6cc9a,
+                        #fff69a),url("../img/combos blanco y negro.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: portada;
+}
+
+.detalle{
+    grid-area: detalle;
+    padding: 5%;
+}
+
+.imagen-portada{
+    margin-right: 20px;
+}
+
+.imagen-portada figcaption{
+    text-align: center;
+    padding: 10px;
+}
+.imagen-portada img{
+    grid-area: imagen-portada;
+    width:100%;
+    height: 350px;
+    object-fit:cover;
+    padding: 0;
+}
+
+/*SERVICIOS*/
+.card{
+    background-color: #fff6cc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    padding:0;
+}
+
+.card-hover{
+    transition: transform 0.3s ease;
+}
+
+.card-hover:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.contenedor-cards{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+@media(min-width: 768px){
+    .contenedor-cards{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 1200px;
+    }
+}
+
+@media(min-width: 1024px){
+    .contenedor-cards{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        max-width: 1200px;
+    }
+}
+
+
+/* PROYECTOS */
+.carousel{
+    width: 600px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.tit-car{
+    color: #b35e3c;
+    font-size: 18px;
+    background-color: #fdfdfda1;
+}
+
+.text-car{
+    color: #0c0c0c;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #fdfdfda1;
+}
+
+/* footer */    
+footer{
+    background-color: #e8d9d0;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    font-size: 14px;
+    color: #2c2b2a;
+}
+
