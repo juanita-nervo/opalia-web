@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+
+.navbar-brand {
+    font-size: 32px;
+    font-weight: bold;
+    color: $color-primario;
+
+    &:hover {
+        color: $color-primario-hover;
+    }
+}
+
+nav {
+    a {
+        text-decoration: none;
+        color: $color-secundario;
+        font-size: $font-size-nav;
+        font-weight: 500;
+        padding-left: $espaciado-lg;
+
+        &:hover {
+            color: $color-primario;
+        }
+    }
+}

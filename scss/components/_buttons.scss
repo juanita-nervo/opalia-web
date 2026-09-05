@@ -1,0 +1,9 @@
+@use "../utilities/variables" as *;
+
+.btn {
+    border-radius: $radio-borde;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

@@ -1,0 +1,43 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.card {
+    background-color: $color-fondo-card;
+    border-radius: $radio-borde;
+    padding: $espaciado-lg;
+    text-align: center;
+
+    img {
+        width: 100%;
+        height: $alto-card;
+        border-radius: $radio-borde;
+        object-fit: cover;
+        padding: 0;
+    }
+}
+
+.card-hover {
+    transition: $transicion-card;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+        gap: $espaciado-lg;
+        max-width: $ancho-maximo-cards;
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+        gap: $espaciado-lg;
+        max-width: $ancho-maximo-cards;
+    }
+}

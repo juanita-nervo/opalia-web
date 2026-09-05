@@ -1,0 +1,64 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.inicio {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "portada"
+        "detalle"
+        "imagen-portada";
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "portada portada portada"
+            "detalle detalle imagen-portada";
+        margin: 0;
+        gap: $espaciado-lg;
+    }
+}
+
+.portada {
+    background-image: linear-gradient(
+    $color-overlay-inicio,
+    $color-overlay-inicio-secundario
+) , url("../img/combos blanco y negro.jpg");
+
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: $alto-portada;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: portada;
+}
+
+.detalle {
+    grid-area: detalle;
+    padding: 5%;
+}
+
+.imagen-portada {
+    margin-right: $espaciado-lg;
+
+    figcaption {
+        text-align: center;
+        padding: $espaciado-sm;
+    }
+
+    img {
+        grid-area: imagen-portada;
+        width: 100%;
+        height: $alto-imagen-portada;
+        object-fit: cover;
+        padding: 0;
+    }
+}

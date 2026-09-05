@@ -1,0 +1,8 @@
+@use "../utilities/variables" as *;
+
+header {
+    background-color: $color-fondo-header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

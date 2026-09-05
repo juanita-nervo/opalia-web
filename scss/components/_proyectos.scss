@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+
+.carousel {
+    width: $ancho-carousel;
+}
+
+.carousel-item {
+    img {
+        width: 100%;
+        height: $alto-carousel;
+        object-fit: cover;
+    }
+}
+
+.tit-car {
+    color: $color-primario;
+    font-size: $font-size-carousel-titulo;
+    background-color: $color-fondo-carousel;
+}
+
+.text-car {
+    color: $color-texto-carousel;
+    font-size: $font-size-carousel-texto;
+    font-weight: 900;
+    background-color: $color-fondo-carousel;
+}

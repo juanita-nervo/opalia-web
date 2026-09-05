@@ -1,0 +1,55 @@
+// COLORES
+$color-fondo-header: #fff6cc;
+$color-primario: #b35e3c;
+$color-primario-hover: #834026;
+$color-secundario: #572c10;
+$color-texto: #2c2b2a;
+$color-fondo-detalle: #fcf5d8;
+$color-fondo-footer: #e8d9d0;
+$color-blanco: #fff;
+$color-negro: #000;
+$color-fondo-card: #fff6cc;
+$color-overlay-inicio: #fff6cc9a;
+$color-overlay-inicio-secundario: #fff69a;
+$color-fondo-carousel: #fdfdfda1;
+$color-texto-carousel: #0c0c0c;
+
+// TIPOGRAFÍA
+$fuente-principal: Quicksand, Helvetica, sans-serif;
+
+$font-size-h1: 48px;
+$font-size-h2: 32px;
+$font-size-h3: 24px;
+$font-size-nav: 18px;
+$font-size-parrafo: 18px;
+$font-size-carousel-titulo: 18px;
+$font-size-carousel-texto: 14px;
+$font-size-footer: 14px;
+
+// ESPACIADOS
+$espaciado-xs: 5px;
+$espaciado-sm: 10px;
+$espaciado-md: 15px;
+$espaciado-lg: 20px;
+$espaciado-xl: 30px;
+
+// BORDES
+$radio-borde: 10px;
+$radio-circular: 50%;
+$border-detalle: 1px solid $color-secundario;
+
+// DIMENSIONES
+$ancho-imagen: 300px;
+$alto-imagen-portada: 350px;
+$alto-portada: 400px;
+$alto-card: 250px;
+$alto-carousel: 500px;
+$ancho-carousel: 600px;
+$ancho-maximo-cards: 1200px;
+
+// TRANSICIONES
+$transicion-card: transform 0.3s ease;
+
+// BREAKPOINTS
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

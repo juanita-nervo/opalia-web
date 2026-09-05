@@ -1,0 +1,21 @@
+@use "../utilities/variables" as *;
+
+.imgyo {
+    img {
+        width: $ancho-imagen;
+        height: $ancho-imagen;
+        object-fit: cover;
+        border-radius: $radio-circular;
+    }
+}
+
+.detalle {
+    padding: $espaciado-lg;
+    text-align: center;
+    font-size: $font-size-parrafo;
+    color: $color-texto;
+    background-color: $color-fondo-detalle;
+    border: $border-detalle;
+    border-radius: $radio-borde;
+    margin: $espaciado-lg;
+}

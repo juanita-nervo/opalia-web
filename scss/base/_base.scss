@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 25px;
+}
+
+h1 {
+    padding: $espaciado-xl;
+    text-align: center;
+}
+
+h2 {
+    padding: $espaciado-md;
+}
+
+h3 {
+    padding: $espaciado-sm;
+}
+
+p {
+    padding: $espaciado-sm;
+}
+
+img {
+    padding: $espaciado-lg;
+    width: $ancho-imagen;
+    height: auto;
+}

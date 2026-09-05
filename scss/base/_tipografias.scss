@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+
+body {
+    font-family: $fuente-principal;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    color: $color-primario;
+}
+
+h2 {
+    font-size: $font-size-h2;
+    color: $color-primario;
+}
+
+h3 {
+    font-size: $font-size-h3;
+    color: $color-primario;
+}
+
+p {
+    font-size: $font-size-parrafo;
+    color: $color-texto;
+}
