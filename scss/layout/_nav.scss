@@ -9,17 +9,33 @@
         color: $color-primario-hover;
     }
 }
-
 nav {
     a {
+        position: relative;
         text-decoration: none;
         color: $color-secundario;
         font-size: $font-size-nav;
         font-weight: 500;
         padding-left: $espaciado-lg;
+        @include transicion(color, 0.2s);
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+            width: 0;
+            height: 2px;
+            background-color: $color-primario;
+            transition: width 0.3s ease;
+        }
 
         &:hover {
             color: $color-primario;
+
+            &::after {
+                width: calc(100% - 20px);
+            }
         }
     }
 }

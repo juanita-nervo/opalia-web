@@ -9,3 +9,13 @@
         @content;
     }
 }
+
+@mixin responsive($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin transicion($propiedad: all, $duracion: 0.3s) {
+    transition: $propiedad $duracion ease;
+}
