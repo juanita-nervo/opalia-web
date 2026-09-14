@@ -13,7 +13,7 @@
 }
 
 .tit-car {
-    color: $color-primario;
+    @extend %texto-destacado;
     font-size: $font-size-carousel-titulo;
     background-color: $color-fondo-carousel;
 }

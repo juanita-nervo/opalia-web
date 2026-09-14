@@ -1,10 +1,9 @@
 @use "../utilities/variables" as *;
 
 .navbar-brand {
+    @extend %texto-destacado;
     font-size: 32px;
-    font-weight: bold;
-    color: $color-primario;
-
+    
     &:hover {
         color: $color-primario-hover;
     }
