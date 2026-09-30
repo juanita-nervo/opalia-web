@@ -3,10 +3,19 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 main {
-    margin-left: 25px;
+    width: 100%;
+    margin-left: 0;
 }
 
 h1 {
@@ -27,7 +36,35 @@ p {
 }
 
 img {
-    padding: $espaciado-lg;
-    width: $ancho-imagen;
+    max-width: 100%;
     height: auto;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+        padding: $espaciado-lg;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
 }

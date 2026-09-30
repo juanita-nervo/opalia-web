@@ -28,6 +28,9 @@
 .contenedor-cards {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 $espaciado-sm;
 
     @include tablet {
         grid-template-columns: repeat(2, 1fr);
