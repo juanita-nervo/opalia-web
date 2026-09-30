@@ -2,15 +2,13 @@
 
 header {
     background-color: $color-fondo-header;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    max-width: 100%;
 }
 
-@media (max-width: 991px) {
-    header {
-        flex-wrap: wrap;
-    }
+.navbar {
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
 }

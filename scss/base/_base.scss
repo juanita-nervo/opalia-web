@@ -10,6 +10,8 @@ html,
 body{
     width: 100%;
     max-width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -36,8 +38,9 @@ p {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+   max-width: 100%;
+   height: auto;
+   box-sizing: border-box;
 }
 
 @media (max-width: 767px) {
@@ -56,6 +59,13 @@ img {
 
     p {
         font-size: 16px;
+    }
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        padding: 0;
     }
 }
 

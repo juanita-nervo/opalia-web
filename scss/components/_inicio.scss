@@ -9,6 +9,9 @@
         "detalle"
         "imagen-portada";
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
 }
 
 @include tablet {
@@ -32,6 +35,8 @@
     background-size: cover;
     background-position: center;
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
     height: $alto-portada;
 
     display: flex;
@@ -59,10 +64,15 @@
 .detalle {
     grid-area: detalle;
     padding: 5%;
+    min-width: 0;
+    max-width: 100%;
 }
 
 .imagen-portada {
     margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
 
     figcaption {
         text-align: center;
@@ -73,7 +83,7 @@
         grid-area: imagen-portada;
         width: 100%;
         max-width: 100%;
-        height: $alto-imagen-portada;
+        height: auto;
         object-fit: cover;
         padding: 0;
     }
@@ -89,9 +99,17 @@
     width: 80%;
     max-width: 1100px;
     margin: 30px auto;
+    overflow: hidden;
+}
+
+#carouselExampleInterval .carousel-inner,
+#carouselExampleInterval .carousel-item {
+    width: 100%;
+    max-width: 100%;
 }
 
 #carouselExampleInterval img {
+    display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
